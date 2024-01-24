@@ -55,18 +55,18 @@ fun TaskManager() {
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFFD4EADF)) // Set the background color for the screen
+            .background(Color(0xFFf7e4dc)) // Set the background color for the screen
     ) {
-        Spacer(modifier = Modifier.height(200.dp))
+        Spacer(modifier = Modifier.height(160.dp))
 
         // Middle row with profile information
         Box(
             modifier = Modifier
-                .size(120.dp) // Set the desired size for the image
+                .size(width = 150.dp, height = 200.dp) // Set the desired size for the image
                 .background(MaterialTheme.colorScheme.secondary), // Set the background color
         ) {
             Image(
-                painter = painterResource(id = R.drawable.android_logo),
+                painter = painterResource(id = R.drawable.profilepic),
                 contentDescription = null
             )
         }
@@ -81,7 +81,7 @@ fun TaskManager() {
             text = "Android Developer Extraordinaire",
             fontSize = 16.sp,
             fontWeight = FontWeight.Bold,
-            color = Color(0xFF5DA43E)
+            color = Color(0xFFa30000)
         )
 
         // Bottom row with contact information
